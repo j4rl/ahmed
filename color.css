@@ -1,3 +1,15 @@
-:root{
-  --main-bg-color: #ffffff;
-  }
+:root {
+    --main-bg-color: #ffffff;
+    --lf-color-red: #EB2945;
+    --lf-color-cerise: #F13C89;
+    --lf-color-plum: #B53C8E;
+    --lf-color-grape: #7C6374;
+    --lf-color-orange: #F39200;
+    --lf-color-yellow: #FDC300;
+    --lf-color-lightgrey: #F8F8F8;
+    --lf-color-warmgray: #EFEFEF;
+    --lf-color-blue: #0075AA;
+    --lf-color-green: #00B27A;
+    --lf-color-sand1: #FFF1E0;
+    --lf-color-sand2: #FFF6EC;
+}
