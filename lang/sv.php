@@ -1,0 +1,3 @@
+<?php
+  $strTitle="Ärendehantering medlemmar";
+?>
