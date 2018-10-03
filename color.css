@@ -12,4 +12,15 @@
     --lf-color-green: #00B27A;
     --lf-color-sand1: #FFF1E0;
     --lf-color-sand2: #FFF6EC;
+    /* forms */
+    --frm-txtinput-bg-color: var(--lf-color-lightgrey);
+    --frm-txtinput-border-color: black;
+    --frm-txtinput-border-radius: 4px;
+    --frm-txtinput-color: black;
+    --frm-txtinput-width: 250px;
+    /* form button */
+    --btn-border-color: black;
+    --btn-bg-color: var(--lf-color-warmgray);
+    --btn-color: black;
+    --btn-width: 120px;
 }
