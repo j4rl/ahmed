@@ -1,4 +1,145 @@
+<<<<<<< HEAD
 body {
     margin: 0;
     padding: 0;
+=======
+:root {
+    --main-bg-color: rgb(255, 246, 236);
+    --logo-bg-color: #7C6374;
+    --logo-front-color: #EFEFEF;
+    --accent-color-cerise: rgb(241, 60, 137);
+    --accent-color-plum: rgb(181, 60, 142);
+    --accent-color-red: rgb(235, 41, 69);
+    /*button stuff*/
+    --btn-size: 16px;
+    --btn-border: 1px;
+    --btn-border-highlight: rgb(185, 185, 185);
+    --btn-border-lowlight: rgb(119, 119, 119);
+    --btn-color-back: rgb(248, 248, 248);
+    --btn-color-front: var(--accent-color-red);
+    /*form stuff*/
+    --frm-text-input-width: 350px;
+    --frm-text-input-height: 35px;
+    --frm-border: 1px;
+    --frm-border-color: var(--btn-border-highlight);
+    --frm-color-back: var(--btn-color-back);
+    --frm-color-front: rgb(0, 0, 0);
+    --frm-border-radius: 3px;
+}
+
+body {
+    background: var(--main-bg-color);
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: calc(100%-60px);
+    height: 200px;
+    background-color: var(--logo-bg-color);
+    color: var(--logo-front-color);
+    padding: 30px;
+    text-align: right;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 5em;
+    font-weight: normal;
+}
+
+.closeX {
+    float: right;
+    color: var(--btn-color-front);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: calc(var(--btn-size)*0.7);
+    cursor: pointer;
+    font-weight: bold;
+    width: var(--btn-size);
+    height: var(--btn-size);
+    background-color: var(--btn-color-back);
+    text-align: center;
+    border-top: var(--btn-border) var(--btn-border-highlight) solid;
+    border-left: var(--btn-border) var(--btn-border-highlight) solid;
+    border-right: var(--btn-border) var(--btn-border-lowlight) solid;
+    border-bottom: var(--btn-border) var(--btn-border-lowlight) solid;
+    border-radius: 20%;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: var(--accent-color-cerise);
+}
+
+.frmTextInput {
+    width: var(--frm-text-input-width);
+    height: var(--frm-text-input-height);
+    color: var(--frm-color-front);
+    background-color: var(--frm-color-back);
+    border: var(--frm-border) var(--frm-border-color) solid;
+    border-radius: var(--frm-border-radius);
+    text-indent: 10px;
+}
+
+
+/* Style the tab */
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+
+/* Style the buttons that are used to open the tab content */
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+
+/* Change background color of buttons on hover */
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+
+/* Create an active/current tablink class */
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+
+/* Style the tab content */
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.tabcontent {
+    animation: fadeEffect 1s;
+    /* Fading effect takes 1 second */
+}
+
+
+/* Go from zero to full opacity */
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+>>>>>>> fcb957a32018f9cddff3d6ef5d93e5efe743494d
 }
