@@ -28,7 +28,7 @@
 <div id="Starta" class="tabcontent">
   <span class="closeX" onclick="this.parentElement.style.display='none'">X</span>
   <h3>Starta</h3>
-<form action="action.php" name="frmStart" id="frmStart">
+<form action="action.php?frm=start" name="frmStart" id="frmStart">
 <input class="frmTextInput" name="case_responder" id="case_responder" type="text" placeholder="Mottogs av">
 <input class="frmTextInput" name="case_happened" id="case_happened" type="date">
 <input class="frmTextInput" name="local_department" id="local_department" type="text" placeholder="T3">
@@ -37,6 +37,14 @@
 <input class="frmTextInput" name="case_poi" id="case_poi" type="textarea" placeholder="Intressenter">
 <input class="frmTextInput" name="current_contract" id="current_contract" type="text" placeholder="Avtal">
 <input class="frmSubmitBtn" type="submit" id="frmStartBtn" value="Lagra">
+</form>
+<form action="action.php?frm=utr" name="frmUtr" id="frmUtr">
+<input type="text" class="frmTextInput" id="">
+<input type="text" class="frmTextInput">
+<input type="text" class="frmTextInput">
+<input type="text" class="frmTextInput">
+<input type="text" class="frmTextInput">
+<input type="text" class="frmTextInput">
 </form>
 </div>
 
