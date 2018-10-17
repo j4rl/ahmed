@@ -15,6 +15,7 @@
     <div class="logo">
     Ärendehantering Medlemmar
     </div>
+    <div class="content">
       <!-- Tab links -->
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Starta')" id="defaultOpen">Starta</button>
@@ -28,15 +29,15 @@
   <span class="closeX" onclick="this.parentElement.style.display='none'">X</span>
   <h3>Starta</h3>
 <form action="action.php" name="frmStart" id="frmStart">
-<input class="frmTextInput" name="case_responder" type="text" placeholder="Mottogs av">
-<input class="frmTextInput" name="case_happened" type="date">
-<input class="frmTextInput" name="local_department" type="text" placeholder="T3">
-<input class="frmTextInput" name="case_manager" type="text" placeholder="Handläggare">
-<input class="frmTextInput" name="case_client" type="text" placeholder="Medlemsuppgifter">
-<input class="frmTextInput" name="case_poi" type="text" placeholder="Intressenter">
-<input class="frmTextInput" name="current_contract" type="text" placeholder="Avtal">
+<input class="frmTextInput" name="case_responder" id="case_responder" type="text" placeholder="Mottogs av">
+<input class="frmTextInput" name="case_happened" id="case_happened" type="date">
+<input class="frmTextInput" name="local_department" id="local_department" type="text" placeholder="T3">
+<input class="frmTextInput" name="case_manager" id="case_manager" type="text" placeholder="Handläggare">
+<input class="frmTextInput" name="case_client" id="case_client" type="textarea" placeholder="Medlemsuppgifter">
+<input class="frmTextInput" name="case_poi" id="case_poi" type="textarea" placeholder="Intressenter">
+<input class="frmTextInput" name="current_contract" id="current_contract" type="text" placeholder="Avtal">
+<input class="frmSubmitBtn" type="submit" id="frmStartBtn" value="Lagra">
 </form>
-  
 </div>
 
 <div id="Strategi" class="tabcontent">
@@ -61,5 +62,7 @@
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
+</div>
+<footer class="shoestyle"></footer>
 </body>
 </html>

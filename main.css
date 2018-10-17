@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-body {
-    margin: 0;
-    padding: 0;
-=======
 :root {
     --main-bg-color: rgb(255, 246, 236);
     --logo-bg-color: #7C6374;
@@ -18,7 +13,7 @@ body {
     --btn-color-back: rgb(248, 248, 248);
     --btn-color-front: var(--accent-color-red);
     /*form stuff*/
-    --frm-text-input-width: 350px;
+    --frm-text-input-width: 100%;
     --frm-text-input-height: 35px;
     --frm-border: 1px;
     --frm-border-color: var(--btn-border-highlight);
@@ -33,9 +28,13 @@ body {
     padding: 0;
 }
 
+.main {
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+}
+
 .logo {
-    width: calc(100%-60px);
-    height: 200px;
+    grid-row: 1/2;
     background-color: var(--logo-bg-color);
     color: var(--logo-front-color);
     padding: 30px;
@@ -43,6 +42,15 @@ body {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 5em;
     font-weight: normal;
+}
+
+.content {
+    grid-row: 2/3;
+}
+
+.shoestyle {
+    grid-row: 3/4;
+    background-color: var(--logo-bg-color);
 }
 
 .closeX {
@@ -70,9 +78,56 @@ h3 {
     color: var(--accent-color-cerise);
 }
 
+#frmStart {
+    display: grid;
+    gap: 0.3em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+#case_responder {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#case_happened {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#case_manager {
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+#local_department {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+#current_contract {
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+
+#case_client {
+    grid-column: 1/3;
+    grid-row: 2/4;
+}
+
+#case_poi {
+    grid-column: 1/3;
+    grid-row: 4/6;
+}
+
+#frmStartBtn {
+    grid-column: 4/5;
+    grid-row: 5/6;
+}
+
 .frmTextInput {
     width: var(--frm-text-input-width);
-    height: var(--frm-text-input-height);
+    min-height: var(--frm-text-input-height);
     color: var(--frm-color-front);
     background-color: var(--frm-color-back);
     border: var(--frm-border) var(--frm-border-color) solid;
@@ -141,5 +196,4 @@ h3 {
     to {
         opacity: 1;
     }
->>>>>>> fcb957a32018f9cddff3d6ef5d93e5efe743494d
 }
