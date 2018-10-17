@@ -1,5 +1,5 @@
 :root {
-    --main-bg-color: #ffffff;
+    --main-bg-color: rgb(255, 246, 236);
     --lf-color-red: #EB2945;
     --lf-color-cerise: #F13C89;
     --lf-color-plum: #B53C8E;
@@ -23,4 +23,22 @@
     --btn-bg-color: var(--lf-color-warmgray);
     --btn-color: black;
     --btn-width: 120px;
+    /*logo area colors */
+    --logo-bg-color: var(--lf-color-grape);
+    --logo-front-color: var(--lf-color-warmgray);
+    /*exit button stuff*/
+    --btn-size: 16px;
+    --btn-border: 1px;
+    --btn-border-highlight: rgb(185, 185, 185);
+    --btn-border-lowlight: rgb(119, 119, 119);
+    --btn-color-back: rgb(248, 248, 248);
+    --btn-color-front: var(--lf-color-red);
+    /*form stuff*/
+    --frm-text-input-width: 100%;
+    --frm-text-input-height: 35px;
+    --frm-border: 1px;
+    --frm-border-color: var(--btn-border-highlight);
+    --frm-color-back: var(--btn-color-back);
+    --frm-color-front: black;
+    --frm-border-radius: 3px;
 }
