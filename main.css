@@ -1,26 +1,36 @@
-:root {
+@import 'color.css';
+
+/*:root {
     --main-bg-color: rgb(255, 246, 236);
     --logo-bg-color: #7C6374;
     --logo-front-color: #EFEFEF;
     --accent-color-cerise: rgb(241, 60, 137);
     --accent-color-plum: rgb(181, 60, 142);
-    --accent-color-red: rgb(235, 41, 69);
-    /*button stuff*/
-    --btn-size: 16px;
+    --accent-color-red: rgb(235, 41, 69);*/
+
+
+/*button stuff*/
+
+
+/*--btn-size: 16px;
     --btn-border: 1px;
     --btn-border-highlight: rgb(185, 185, 185);
     --btn-border-lowlight: rgb(119, 119, 119);
     --btn-color-back: rgb(248, 248, 248);
-    --btn-color-front: var(--accent-color-red);
-    /*form stuff*/
-    --frm-text-input-width: 100%;
+    --btn-color-front: var(--accent-color-red);*/
+
+
+/*form stuff*/
+
+
+/*--frm-text-input-width: 100%;
     --frm-text-input-height: 35px;
     --frm-border: 1px;
     --frm-border-color: var(--btn-border-highlight);
     --frm-color-back: var(--btn-color-back);
     --frm-color-front: rgb(0, 0, 0);
     --frm-border-radius: 3px;
-}
+}*/
 
 body {
     background: var(--main-bg-color);

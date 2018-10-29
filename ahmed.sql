@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.8.1
 -- https://www.phpmyadmin.net/
 --
 -- Värd: 127.0.0.1
--- Tid vid skapande: 19 okt 2018 kl 09:39
--- Serverversion: 10.1.35-MariaDB
--- PHP-version: 7.2.9
+-- Tid vid skapande: 29 okt 2018 kl 20:40
+-- Serverversion: 10.1.33-MariaDB
+-- PHP-version: 7.2.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -31,14 +31,15 @@ SET time_zone = "+00:00";
 CREATE TABLE `tbl_cases` (
   `caseID` int(11) NOT NULL,
   `started` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Case file start time',
+  `case_status` int(11) NOT NULL DEFAULT '10' COMMENT '10-Aktiv 20-Pausad 30-Nedlagd 40-Ingen åtgärd 50-Klar 60 Arkiverad 100-Akut',
   `case_responder` int(11) NOT NULL COMMENT 'Who received this case',
   `case_happened` varchar(50) NOT NULL COMMENT 'When did it happen',
   `local_department` varchar(50) NOT NULL COMMENT 'Local department',
   `case_manager` int(11) NOT NULL COMMENT 'Name, adress, phone, email',
-  `case_client` int(11) NOT NULL COMMENT 'Name, adress, phone, email',
-  `case_poi` int(11) NOT NULL COMMENT 'Persons of intrest in this case, name, adress, phone, email',
+  `case_client` text NOT NULL COMMENT 'Name, adress, phone, email',
+  `case_poi` text NOT NULL COMMENT 'Persons of intrest in this case, name, adress, phone, email',
   `current_contract` varchar(255) NOT NULL,
-  `client_what-happened` text NOT NULL,
+  `client_what_happened` text NOT NULL,
   `background` text NOT NULL,
   `current_situation` text NOT NULL,
   `contractors_comment` text NOT NULL,
@@ -49,7 +50,7 @@ CREATE TABLE `tbl_cases` (
   `local_agreements` varchar(255) NOT NULL,
   `practice` varchar(255) NOT NULL,
   `policys` varchar(255) NOT NULL,
-  `are_there_regulations_in_laws-or-contracts` varchar(255) NOT NULL,
+  `are_there_regulations_in_laws_or_contracts` varchar(255) NOT NULL,
   `mediator_contacted_at` varchar(255) NOT NULL,
   `what_do_client_want` text NOT NULL,
   `union_practice` text NOT NULL,
@@ -137,10 +138,8 @@ ALTER TABLE `tbl_users`
 -- Restriktioner för tabell `tbl_cases`
 --
 ALTER TABLE `tbl_cases`
-  ADD CONSTRAINT `tbl_cases_ibfk_1` FOREIGN KEY (`case_responder`) REFERENCES `tbl_users` (`userID`),
   ADD CONSTRAINT `tbl_cases_ibfk_2` FOREIGN KEY (`case_manager`) REFERENCES `tbl_users` (`userID`),
-  ADD CONSTRAINT `tbl_cases_ibfk_3` FOREIGN KEY (`case_client`) REFERENCES `tbl_users` (`userID`),
-  ADD CONSTRAINT `tbl_cases_ibfk_4` FOREIGN KEY (`case_poi`) REFERENCES `tbl_users` (`userID`);
+  ADD CONSTRAINT `tbl_cases_ibfk_3` FOREIGN KEY (`case_responder`) REFERENCES `tbl_users` (`userID`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
