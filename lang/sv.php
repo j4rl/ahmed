@@ -7,7 +7,7 @@
   $strResult="Resultat";
 
 
-
+  $memberID="Medlemsnummer";
 
 
 

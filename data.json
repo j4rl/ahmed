@@ -1,0 +1,25 @@
+data: [{
+    "memberID": 10,
+    "recipient": 168,
+    "created": "20210130 13:50",
+    "closed": "",
+    "lastOpened": "20210302 12:31",
+    "memberStory": "luilsuy dsliuy dsliuyd laosöiujöh ö cicy opye o fo eyfpoyaoiiuy s  esoipuy sei esi iesu oisuy seiutf iosuy fdkl lisd liughsd iueypoaiy p  piusyd iu ys",
+    "memberWants": "jgjkhg jk gjkgjhgjkht tytui",
+    "assignTo": 168,
+    "status": "Active",
+    "recFreetext": [{
+            "date": "20210714 14:29",
+            "update": "kljh lkghsdlkjh lksg glksdg lksdg dslkg sdlg"
+        },
+        {
+            "date": "20210715 12:22",
+            "update": "kljh lkghsdlkjh lksg glksdg lksdg dslkg sdlg"
+        },
+        {
+            "date": "20210716 11:20",
+            "update": "kljh lkghsdlkjh lksg glksdg lksdg dslkg sdlg"
+        }
+    ]
+
+}]
